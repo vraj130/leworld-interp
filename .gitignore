@@ -1,0 +1,30 @@
+# Per-host virtual environments (never commit; not portable across machines)
+.venv
+.venv-*/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+
+# Environment
+.env
+
+# Data, checkpoints, outputs (these belong under /mnt/NAS/data/vg2097/leworld-interp-data)
+data/
+checkpoints/
+outputs/
+*.pt
+*.ckpt
+*.safetensors
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# MD files
+CLAUDE.md
