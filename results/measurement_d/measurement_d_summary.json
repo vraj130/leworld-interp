@@ -1,0 +1,62 @@
+{
+  "input_anchor_action_r2": 0.20092730224132538,
+  "action_r2_block_outputs": [
+    0.6786702275276184,
+    0.6885722279548645,
+    0.6904532313346863,
+    0.6747100353240967,
+    0.6576093435287476,
+    0.648556113243103
+  ],
+  "consequence_demb_r2_block_outputs": [
+    0.31591057777404785,
+    0.33911633491516113,
+    0.3602142632007599,
+    0.3824000358581543,
+    0.40044713020324707,
+    0.42696821689605713
+  ],
+  "consequence_dstate_r2_block_outputs": [
+    0.5006309151649475,
+    0.5137888789176941,
+    0.5212295651435852,
+    0.5174230933189392,
+    0.5112117528915405,
+    0.5093680620193481
+  ],
+  "action_peak_block": 2,
+  "action_late_over_early": 0.9556277657939697,
+  "consequence_late_over_early": 1.3515477066470445,
+  "crossover_block_k": null,
+  "preregistered_E_prediction": "action decodability is already ~maximal at block 0 (jumps from the input baseline and stays flat-high) while only consequence rises with depth -> preregister FRONT-LOADED per-block ablation (early ablation hurts most; early commitment, decision row 2). NULL = flat (distributed, row 4).",
+  "preregistered_E_id": "front_loaded",
+  "r2_variance_weighted": {
+    "action": [
+      0.19948528707027435,
+      0.6785433888435364,
+      0.6890957355499268,
+      0.6908078193664551,
+      0.6750251054763794,
+      0.6579596996307373,
+      0.6487725377082825
+    ],
+    "demb": [
+      0.2582000494003296,
+      0.3198256194591522,
+      0.34342047572135925,
+      0.3650672733783722,
+      0.38776880502700806,
+      0.40605247020721436,
+      0.4323059618473053
+    ],
+    "dstate": [
+      0.12853039801120758,
+      0.30717915296554565,
+      0.3030400574207306,
+      0.2844217121601105,
+      0.2610851526260376,
+      0.24306294322013855,
+      0.2555423080921173
+    ]
+  }
+}

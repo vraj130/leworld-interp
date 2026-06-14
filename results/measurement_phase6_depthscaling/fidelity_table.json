@@ -1,0 +1,65 @@
+{
+  "n_val_clips": 1500,
+  "rows": [
+    {
+      "depth": 3,
+      "params_total": 12639278,
+      "params_predictor": 5396160,
+      "params_total_M": 12.639,
+      "params_predictor_M": 5.396,
+      "tf_next_emb_mse": 0.020113341510295868,
+      "relative_mse": 0.021150206408982613,
+      "skill_vs_persistence": 8.80089066135421,
+      "rollout_cost_true": 28.387006759643555,
+      "rollout_cost_shuffled": 236.00758361816406,
+      "shuf_over_true": 8.313929877019817,
+      "passed": true,
+      "train_wall_min": 139.5
+    },
+    {
+      "depth": 6,
+      "params_total": 18034478,
+      "params_predictor": 10791360,
+      "params_total_M": 18.034,
+      "params_predictor_M": 10.791,
+      "tf_next_emb_mse": 0.02499917894601822,
+      "relative_mse": 0.026324883447652277,
+      "skill_vs_persistence": 7.473857885342528,
+      "rollout_cost_true": 35.72898864746094,
+      "rollout_cost_shuffled": 227.41268920898438,
+      "shuf_over_true": 6.364934967873639,
+      "passed": true,
+      "train_wall_min": 135.9
+    },
+    {
+      "depth": 12,
+      "params_total": 28824878,
+      "params_predictor": 21581760,
+      "params_total_M": 28.825,
+      "params_predictor_M": 21.582,
+      "tf_next_emb_mse": 0.02448515221476555,
+      "relative_mse": 0.0258271556313758,
+      "skill_vs_persistence": 7.8798871024207315,
+      "rollout_cost_true": 36.98854064941406,
+      "rollout_cost_shuffled": 224.2889404296875,
+      "shuf_over_true": 6.063741269371774,
+      "passed": true,
+      "train_wall_min": 154.1
+    },
+    {
+      "depth": 18,
+      "params_total": 39615278,
+      "params_predictor": 32372160,
+      "params_total_M": 39.615,
+      "params_predictor_M": 32.372,
+      "tf_next_emb_mse": 0.023600827902555466,
+      "relative_mse": 0.024892612796445043,
+      "skill_vs_persistence": 8.331411666600108,
+      "rollout_cost_true": 36.64946746826172,
+      "rollout_cost_shuffled": 229.58949279785156,
+      "shuf_over_true": 6.264470090777583,
+      "passed": true,
+      "train_wall_min": 155.7
+    }
+  ]
+}

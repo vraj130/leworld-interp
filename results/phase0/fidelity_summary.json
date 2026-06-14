@@ -1,0 +1,57 @@
+{
+  "seed": 0,
+  "device": "cuda:1",
+  "checkpoint": "/mnt/NAS/data/vg2097/leworld-interp-data/checkpoints/lewm-pusht/weights.pt",
+  "frameskip": 5,
+  "action_dim": 2,
+  "history_size": 3,
+  "num_preds": 1,
+  "n_tf_clips": 512,
+  "n_tf_episodes": 508,
+  "n_rollout_clips": 256,
+  "n_rollout_episodes": 254,
+  "horizon": 8,
+  "teacher_forced": {
+    "next_emb_mse_overall": 0.008129040710628033,
+    "next_emb_mse_per_position": [
+      0.008122727274894714,
+      0.008023268543183804,
+      0.008241122588515282
+    ],
+    "readout_pos_mse": 0.008241122588515282,
+    "persistence_mse_overall": 0.1878172904253006,
+    "persistence_mse_per_position": [
+      0.17951329052448273,
+      0.18481075763702393,
+      0.19912809133529663
+    ],
+    "target_emb_energy_per_dim": 1.009844183921814,
+    "relative_mse_overall": 0.008049797028149655,
+    "skill_vs_persistence": 23.104483925113744
+  },
+  "rollout": {
+    "drift_true_per_horizon": [
+      0.009534846059978008,
+      0.022864144295454025,
+      0.03554986044764519,
+      0.055288322269916534,
+      0.07965554296970367,
+      0.11513040214776993,
+      0.14613093435764313,
+      0.17088785767555237
+    ],
+    "drift_shuf_per_horizon": [
+      0.267901211977005,
+      0.6428890824317932,
+      0.9456005096435547,
+      1.225623369216919,
+      1.4273357391357422,
+      1.5481207370758057,
+      1.6566625833511353,
+      1.7401347160339355
+    ],
+    "final_cost_true": 30.013874053955078,
+    "final_cost_shuf": 329.53973388671875,
+    "shuf_over_true_final": 10.97957992553711
+  }
+}
