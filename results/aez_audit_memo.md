@@ -1,11 +1,11 @@
 # AEZ audit memo: action conditioning in LeWM's predictor (final)
 
-Audience: PhD collaborator and Prof. Chen Feng. Status: Measurements A through E, the E
-retrained-probe robustness check, the Phase 5 reacher replication, and the Phase 6 depth-scaling
-study are complete and reproducible. Scope: the released LeWM checkpoints for PushT and reacher,
-plus four from-scratch retrains at predictor depth {3, 6, 12, 18} for the depth-scaling study.
-Every probe number states its sample size, since the retrained-probe check showed probe results
-are sample-size sensitive.
+Status: Measurements A through E, the E
+retrained-probe robustness check, the Phase 5 reacher replication, the Phase 6 depth-scaling
+study, and the Phase 7 released-scale depth-12 verification are complete and reproducible. Scope:
+the released LeWM checkpoints for PushT and reacher, four from-scratch reduced-regime retrains at
+predictor depth {3, 6, 12, 18}, and one released-scale depth-12 retrain. Every probe number states
+its sample size, since the retrained-probe check showed probe results are sample-size sensitive.
 
 ## Verdict in one paragraph
 
@@ -18,8 +18,10 @@ conditioning pathway is MLP-routed, and the consequence representation is distri
 depth with late blocks refining it. This maps to decision row 2, early commitment, which we
 read as commitment at the injection sites. It replicates across both environments tested. The
 depth-scaling study refines what "early" means: the commitment location is relative, not absolute.
-It sits at a roughly constant fraction, about the first 40%, of predictor depth, so the block-2-of-6
+It sits at a roughly constant fraction, about the first third, of predictor depth, so the block-2-of-6
 result is the depth-6 instance of a fraction that scales with depth rather than a fixed early block.
+This relative-depth law is verified at released scale at two points (depth 6 and depth 12 both commit
+at fraction 0.33), so it is not an artifact of the reduced-data retraining regime.
 
 ## Cross-environment status: REPLICATED
 
@@ -75,6 +77,21 @@ falls from about 1.1 at d3 and d6 to 0.74 at d12 and 0.56 at d18, a zone-like sa
 invisible at depth 6 and appears once there are enough layers. Detail in
 results/measurement_phase6_depthscaling/depth_scaling_results.md.
 
+Released-scale confirmation (Phase 7). Because the four depth-scaling models were trained in a
+reduced-data regime (rel-MSE about 0.025) while the original audit used the released checkpoint
+(rel-MSE about 0.007), we trained one depth-12 model at released-data scale to verify the law where
+the absolute and relative hypotheses diverge most. d12 was retrained from scratch on the full 18,485
+non-val episodes (lossless RAM-resident zstd cache to stay GPU-bound) and reached rel-MSE 0.0085
+(fidelity PASS, rollout shuffled-over-true 15.3x), about 3x better than the reduced d12 and within
+about 20% of the released d6. At released scale its commitment lands at block 4, fraction 0.33,
+identical to the released d6 fraction and stable across seeds and sample sizes, decisively above the
+absolute prediction (block about 2, fraction about 0.17). MLP routing holds (the attention branch is
+at the numerical noise floor, so the conditioning is essentially all MLP-routed), and the D_l
+deep-third plateau persists (late-over-early slope 0.59). So the depth law is now confirmed at two
+released-scale points, d6 and d12, both at fraction 0.33; released-scale training if anything tightens
+the constant relative to the reduced regime (which gave 0.42 at d12). Detail in
+results/measurement_phase7_released_d12/measurements_results.md.
+
 ## Lead with the clean causal signals
 
 Three signals carry the verdict, and all three are early-emphasized.
@@ -129,12 +146,17 @@ in partial form after the retrained-probe correction.
 
 ## Limitations to name first
 
-Depth-scaling is now tested, with a caveat. The earlier worry, that the six-block predictor was
-shallow and the commitment might sharpen or move in a deeper predictor, is resolved by Phase 6:
-the commitment does move, staying at a roughly constant fraction (about 0.37) of depth across
-{3, 6, 12, 18}. The remaining caveat is that this law is established in the reduced-data regime and
-bridged to released-scale through the retrained-depth-6 consistency gate. It is not directly
-verified at released quality at every depth, since only the depth-6 model exists at released scale.
+Depth-scaling is now tested, including at released scale. The earlier worry, that the six-block
+predictor was shallow and the commitment might sharpen or move in a deeper predictor, is resolved by
+Phase 6: the commitment does move, staying at a roughly constant fraction (about 0.33 to 0.42) of
+depth across {3, 6, 12, 18}. Phase 7 then closed the data-scale gap by training a depth-12 model at
+released-data quality (rel-MSE 0.0085, fidelity PASS): its commitment fraction is 0.33, identical to
+the released depth-6, so the law is now directly verified at two released-scale points spanning the
+absolute-versus-relative divergence, not only in the reduced regime. The remaining caveat is small:
+the intermediate depths d3 and d18 are verified in the reduced regime, and the released-scale d12 was
+trained by our own pipeline (the Phase 6 retrained-depth-6 consistency gate establishes that pipeline
+reproduces the official released-depth-6 audit), rather than every depth existing as an official
+released checkpoint.
 
 Single architecture. The result is replicated across two environments, PushT and reacher, but
 within one model family, LeWM. It is not tested across architectures, so the relative-depth,
@@ -165,6 +187,7 @@ generality, not depth.
 - results/measurement_phase5_reacher/phase5.png, reacher replication of the three signals (N 1000).
 - results/measurement_phase6_depthscaling/phase6_gate_d6.png, retrained-d6 versus released-d6 gate (N 1000).
 - results/measurement_phase6_depthscaling/phase6_sweep.png, commitment depth, MLP routing, and D_l shape across depth {3, 6, 12, 18} (N 1000).
+- results/measurement_phase7_released_d12/phase7_released_d12.png, released-scale d12 commitment fraction vs released d6 and reduced d12 (N 1000).
 
 Every figure has a saved raw-array counterpart under DATA_ROOT and is regenerable with the
 matching experiment module and the --from-cache flag.

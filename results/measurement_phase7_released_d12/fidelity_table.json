@@ -1,0 +1,20 @@
+{
+  "n_val_clips": 1500,
+  "rows": [
+    {
+      "depth": 12,
+      "params_total": 28824878,
+      "params_predictor": 21581760,
+      "params_total_M": 28.825,
+      "params_predictor_M": 21.582,
+      "tf_next_emb_mse": 0.008443191647529602,
+      "relative_mse": 0.008472878915917473,
+      "skill_vs_persistence": 20.195452628160666,
+      "rollout_cost_true": 17.296802520751953,
+      "rollout_cost_shuffled": 263.9292907714844,
+      "shuf_over_true": 15.258848590936589,
+      "passed": true,
+      "train_wall_min": 380.8
+    }
+  ]
+}

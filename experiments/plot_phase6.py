@@ -133,10 +133,65 @@ def sweep_plot(depths):
     print(f"saved {out}")
 
 
+def phase7_plot():
+    """Released-scale d12 vs released-d6 and reduced-d12: depth law at released scale."""
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    res7 = paths.RESULTS / "measurement_phase7_released_d12"
+    arr7 = paths.ACTIVATIONS / "measurement_phase7_released_d12"
+    rel12 = json.load(open(arr7 / "depth_12_released.json"))
+    red12 = _load(12)
+    e = json.load(open(REL_E))
+    d6_cum = np.asarray(e["part2_cumulative"]["mse_increase"], float)
+
+    def norm(c):
+        c = np.asarray(c, float); return c / c[0]
+
+    fig, ax = plt.subplots(1, 2, figsize=(12.5, 4.8))
+
+    # panel 1: cumulative ablation on fractional-depth axis
+    for cum, nb, color, lab in [
+        (d6_cum, 6, "#1f77b4", "released d6 (commit 2, frac 0.33)"),
+        (np.asarray(rel12["cumulative_mse_increase"]), 12, "#d62728", "released d12 (commit 4, frac 0.33)"),
+        (np.asarray(red12["cumulative_mse_increase"]), 12, "#7f7f7f", "reduced d12 (commit 5, frac 0.42)"),
+    ]:
+        x = np.arange(nb) / (nb - 1)
+        style = "--s" if "reduced" in lab else "-o"
+        ax[0].plot(x, norm(cum), style, color=color, lw=2.2, ms=5, label=lab)
+    ax[0].axhline(0.5, color="#aaa", ls=":", lw=1.3, label="50% bar")
+    ax[0].set_xlabel("fractional depth  l/(D-1)"); ax[0].set_ylabel("cumulative damage / full")
+    ax[0].set_title("(2) commitment depth at released scale"); ax[0].legend(fontsize=8)
+
+    # panel 2: commitment fraction vs total depth (Phase 6 reduced sweep + released points)
+    sweep = {}
+    for d in (3, 6, 12, 18):
+        r = _load(d); cum = norm(r["cumulative_mse_increase"])
+        sweep[d] = max([l for l in range(d) if cum[l] >= 0.5]) / d
+    ax[1].plot(list(sweep), list(sweep.values()), "--s", color="#7f7f7f", lw=2.0, ms=7,
+               label="reduced-regime sweep (Phase 6)")
+    ax[1].plot([6], [2 / 6], "o", color="#1f77b4", ms=13, label="released d6 (0.33)")
+    ax[1].plot([12], [4 / 12], "o", color="#d62728", ms=13, label="released d12 (0.33)")
+    ax[1].axhline(1 / 3, color="#2ca02c", ls=":", lw=1.5, label="fraction 1/3")
+    ax[1].set_ylim(0, 0.7)
+    ax[1].set_xlabel("total predictor depth"); ax[1].set_ylabel("commitment fraction of depth")
+    ax[1].set_title("(2) fraction is depth-invariant, held at released scale"); ax[1].legend(fontsize=8)
+
+    fig.suptitle("Phase 7: commitment fraction holds at released scale (d6 and d12 both 0.33, rel-MSE ~0.007-0.008)",
+                 fontsize=11)
+    fig.tight_layout()
+    paths.ensure(res7)
+    out = res7 / "phase7_released_d12.png"
+    fig.savefig(out, dpi=130); plt.close(fig)
+    print(f"saved {out}")
+
+
 def main():
     pa = argparse.ArgumentParser()
     pa.add_argument("--gate", action="store_true")
     pa.add_argument("--sweep", action="store_true")
+    pa.add_argument("--phase7", action="store_true")
     pa.add_argument("--depths", type=int, nargs="+", default=[3, 6, 12, 18])
     args = pa.parse_args()
     paths.ensure(RES_DIR)
@@ -144,6 +199,8 @@ def main():
         gate_plot()
     if args.sweep:
         sweep_plot(args.depths)
+    if args.phase7:
+        phase7_plot()
 
 
 if __name__ == "__main__":

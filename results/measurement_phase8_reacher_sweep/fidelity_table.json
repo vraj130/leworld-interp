@@ -1,0 +1,18 @@
+{
+  "env": "reacher",
+  "n_val_clips": 384,
+  "rows": [
+    {
+      "label": "released-reacher-ref",
+      "depth": 6,
+      "params_total_M": 18.034,
+      "params_predictor_M": 10.791,
+      "params_per_block_M": 1.799,
+      "tf_next_emb_mse": 0.006551729515194893,
+      "relative_mse": 0.006599337198163926,
+      "skill_vs_persistence": 74.72265598235987,
+      "shuf_over_true": 86.33030603026086,
+      "passed": true
+    }
+  ]
+}

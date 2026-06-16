@@ -51,9 +51,9 @@ def load_val_batch(n, seed):
             torch.stack([it["action"] for it in items]))
 
 
-def gate_depth(depth, px, action_raw, amean, astd, dev):
-    cfg_p = CKPT_ROOT / f"depth_{depth}" / "config.json"
-    w_p = CKPT_ROOT / f"depth_{depth}" / "weights.pt"
+def gate_depth(depth, px, action_raw, amean, astd, dev, ckpt_root=CKPT_ROOT):
+    cfg_p = ckpt_root / f"depth_{depth}" / "config.json"
+    w_p = ckpt_root / f"depth_{depth}" / "weights.pt"
     model, cfg = build_lewm(cfg_p, w_p, device=dev, dtype=torch.float32)
     n_total = sum(p.numel() for p in model.parameters())
     n_pred = sum(p.numel() for p in model.predictor.parameters())
@@ -86,29 +86,34 @@ def main():
     pa.add_argument("--n", type=int, default=1500)
     pa.add_argument("--seed", type=int, default=0)
     pa.add_argument("--device", default="cuda:0")
+    pa.add_argument("--ckpt-root", default=None, help="override checkpoint root (e.g. released)")
     pa.add_argument("--from-cache", action="store_true")
     args = pa.parse_args()
-    paths.ensure(RES_DIR, ARR)
-    out = RES_DIR / "fidelity_table.json"
+    from pathlib import Path
+    ckpt_root = Path(args.ckpt_root) if args.ckpt_root else CKPT_ROOT
+    # released-scale runs write to the Phase 7 dir so the Phase 6 table is preserved
+    res_dir = (paths.RESULTS / "measurement_phase7_released_d12") if args.ckpt_root else RES_DIR
+    paths.ensure(res_dir, ARR)
+    out = res_dir / "fidelity_table.json"
     if args.from_cache:
         print(out.read_text())
         return
 
     set_seed(args.seed)
-    depths = args.depths or sorted(int(p.name.split("_")[1]) for p in CKPT_ROOT.glob("depth_*")
+    depths = args.depths or sorted(int(p.name.split("_")[1]) for p in ckpt_root.glob("depth_*")
                                    if (p / "weights.pt").exists())
     am2, as2 = D.compute_action_stats(paths.PUSHT_H5)
     amean, astd = PC.action_znorm(am2, as2, 5)
     amean, astd = amean.to(args.device), astd.to(args.device)
     px, action_raw = load_val_batch(args.n, args.seed)
-    print(f"[phase6 fidelity] depths={depths} on {px.size(0)} held-out val clips")
+    print(f"[phase6 fidelity] depths={depths} on {px.size(0)} held-out val clips (ckpt_root={ckpt_root.name})")
 
     rows = []
     for d in depths:
-        r = gate_depth(d, px, action_raw, amean, astd, args.device)
+        r = gate_depth(d, px, action_raw, amean, astd, args.device, ckpt_root=ckpt_root)
         rows.append(r)
         # merge in training meta if present
-        mp = CKPT_ROOT / f"depth_{d}" / "train_meta.json"
+        mp = ckpt_root / f"depth_{d}" / "train_meta.json"
         if mp.exists():
             r["train_wall_min"] = round(json.loads(mp.read_text()).get("wall_time_s", 0) / 60, 1)
         print(f"  depth {d:2d}: {r['params_total_M']:.2f}M (pred {r['params_predictor_M']:.2f}M)  "

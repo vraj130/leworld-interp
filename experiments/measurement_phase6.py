@@ -47,9 +47,9 @@ RELEASED_MLP_SHARE = 0.75
 COMMIT_THRESH = 0.5      # 50%-of-full bar (matches Measurement E)
 
 
-def measure_depth(depth, px, action_raw, amean, astd, dev, seed):
-    cfg_p = CKPT_ROOT / f"depth_{depth}" / "config.json"
-    w_p = CKPT_ROOT / f"depth_{depth}" / "weights.pt"
+def measure_depth(depth, px, action_raw, amean, astd, dev, seed, ckpt_root=CKPT_ROOT):
+    cfg_p = ckpt_root / f"depth_{depth}" / "config.json"
+    w_p = ckpt_root / f"depth_{depth}" / "weights.pt"
     model, cfg = build_lewm(cfg_p, w_p, device=dev, dtype=torch.float32)
     assert not model.training
     nb = len(model.predictor.transformer.layers)
