@@ -1,0 +1,797 @@
+[fourier] checkpoints -> /mnt/NAS/data/vg2097/leworld-interp-data/checkpoints/depth_scaling_<env>_fourier/depth_<depth>
+[cache] using existing zstd caches for reacher: train 9800 episodes
+01:09:52 | INFO  | __init__.py | JAX version 0.10.1 available.
+01:09:53 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+01:09:53 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+[sweep reacher d=6] params total=18.03M pred=10.79M params/block=1.799M | train_clips=1783600 val_clips=36400 | max_steps=200000 action_dim=2
+/mnt/NAS/home/vg2097/leworld-interp/.venv-ai4ce-fourier/lib/python3.12/site-packages/lance/__init__.py:320: UserWarning: lance is not fork-safe. If you are using multiprocessing, use spawn or forkserver instead.
+  warnings.warn(
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [reacher d6] step 1000/200000 loss=0.8597 pred=0.3245 lr=1.25e-05
+  [reacher d6] step 2000/200000 loss=0.4165 pred=0.1020 lr=2.50e-05
+  [reacher d6] step 3000/200000 loss=0.3080 pred=0.0688 lr=3.75e-05
+  [reacher d6] step 4000/200000 loss=0.2675 pred=0.0576 lr=5.00e-05
+  [reacher d6] step 5000/200000 loss=0.2360 pred=0.0475 lr=5.00e-05
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 5000 rel=0.2382 (0.5x persist) best=0.2382
+  [reacher d6] step 6000/200000 loss=0.2232 pred=0.0464 lr=5.00e-05
+  [reacher d6] step 7000/200000 loss=0.2206 pred=0.0418 lr=5.00e-05
+  [reacher d6] step 8000/200000 loss=0.2023 pred=0.0451 lr=4.99e-05
+  [reacher d6] step 9000/200000 loss=0.2038 pred=0.0388 lr=4.99e-05
+  [reacher d6] step 10000/200000 loss=0.1905 pred=0.0410 lr=4.99e-05
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 10000 rel=0.2789 (0.5x persist) best=0.2382
+  [reacher d6] step 11000/200000 loss=0.1951 pred=0.0447 lr=4.98e-05
+  [reacher d6] step 12000/200000 loss=0.1802 pred=0.0396 lr=4.98e-05
+  [reacher d6] step 13000/200000 loss=0.1788 pred=0.0372 lr=4.97e-05
+  [reacher d6] step 14000/200000 loss=0.1902 pred=0.0437 lr=4.97e-05
+  [reacher d6] step 15000/200000 loss=0.1790 pred=0.0325 lr=4.96e-05
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 15000 rel=0.1641 (1.6x persist) best=0.1641
+  [reacher d6] step 16000/200000 loss=0.1724 pred=0.0348 lr=4.95e-05
+  [reacher d6] step 17000/200000 loss=0.1683 pred=0.0346 lr=4.95e-05
+  [reacher d6] step 18000/200000 loss=0.1699 pred=0.0371 lr=4.94e-05
+  [reacher d6] step 19000/200000 loss=0.1693 pred=0.0355 lr=4.93e-05
+  [reacher d6] step 20000/200000 loss=0.1797 pred=0.0390 lr=4.92e-05
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 20000 rel=0.3448 (0.4x persist) best=0.1641
+  [reacher d6] step 21000/200000 loss=0.1811 pred=0.0395 lr=4.91e-05
+  [reacher d6] step 22000/200000 loss=0.1715 pred=0.0367 lr=4.90e-05
+  [reacher d6] step 23000/200000 loss=0.1706 pred=0.0437 lr=4.88e-05
+  [reacher d6] step 24000/200000 loss=0.1672 pred=0.0305 lr=4.87e-05
+  [reacher d6] step 25000/200000 loss=0.1685 pred=0.0357 lr=4.86e-05
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 25000 rel=0.3121 (0.4x persist) best=0.1641
+  [reacher d6] step 26000/200000 loss=0.1718 pred=0.0419 lr=4.85e-05
+  [reacher d6] step 27000/200000 loss=0.1708 pred=0.0390 lr=4.83e-05
+  [reacher d6] step 28000/200000 loss=0.1717 pred=0.0379 lr=4.82e-05
+  [reacher d6] step 29000/200000 loss=0.1597 pred=0.0362 lr=4.80e-05
+  [reacher d6] step 30000/200000 loss=0.1588 pred=0.0338 lr=4.79e-05
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 30000 rel=0.1366 (2.3x persist) best=0.1366
+  [reacher d6] step 31000/200000 loss=0.1675 pred=0.0376 lr=4.77e-05
+  [reacher d6] step 32000/200000 loss=0.1628 pred=0.0368 lr=4.75e-05
+  [reacher d6] step 33000/200000 loss=0.1583 pred=0.0313 lr=4.73e-05
+  [reacher d6] step 34000/200000 loss=0.1680 pred=0.0391 lr=4.72e-05
+  [reacher d6] step 35000/200000 loss=0.1605 pred=0.0325 lr=4.70e-05
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 35000 rel=0.1065 (3.3x persist) best=0.1065
+  [reacher d6] step 36000/200000 loss=0.1605 pred=0.0326 lr=4.68e-05
+  [reacher d6] step 37000/200000 loss=0.1554 pred=0.0304 lr=4.66e-05
+  [reacher d6] step 38000/200000 loss=0.1569 pred=0.0373 lr=4.64e-05
+  [reacher d6] step 39000/200000 loss=0.1556 pred=0.0360 lr=4.62e-05
+  [reacher d6] step 40000/200000 loss=0.1615 pred=0.0345 lr=4.60e-05
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 40000 rel=0.0764 (4.7x persist) best=0.0764
+  [reacher d6] step 41000/200000 loss=0.1368 pred=0.0308 lr=4.57e-05
+  [reacher d6] step 42000/200000 loss=0.1578 pred=0.0367 lr=4.55e-05
+  [reacher d6] step 43000/200000 loss=0.1569 pred=0.0353 lr=4.53e-05
+  [reacher d6] step 44000/200000 loss=0.1579 pred=0.0329 lr=4.50e-05
+  [reacher d6] step 45000/200000 loss=0.1550 pred=0.0334 lr=4.48e-05
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 45000 rel=0.0494 (8.2x persist) best=0.0494
+  [reacher d6] step 46000/200000 loss=0.1568 pred=0.0352 lr=4.45e-05
+  [reacher d6] step 47000/200000 loss=0.1599 pred=0.0349 lr=4.43e-05
+  [reacher d6] step 48000/200000 loss=0.1429 pred=0.0267 lr=4.40e-05
+  [reacher d6] step 49000/200000 loss=0.1517 pred=0.0316 lr=4.38e-05
+  [reacher d6] step 50000/200000 loss=0.1463 pred=0.0326 lr=4.35e-05
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 50000 rel=0.0957 (3.8x persist) best=0.0494
+  [reacher d6] step 51000/200000 loss=0.1445 pred=0.0298 lr=4.32e-05
+  [reacher d6] step 52000/200000 loss=0.1629 pred=0.0413 lr=4.30e-05
+  [reacher d6] step 53000/200000 loss=0.1481 pred=0.0319 lr=4.27e-05
+  [reacher d6] step 54000/200000 loss=0.1544 pred=0.0343 lr=4.24e-05
+  [reacher d6] step 55000/200000 loss=0.1517 pred=0.0330 lr=4.21e-05
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 55000 rel=0.0713 (5.5x persist) best=0.0494
+  [reacher d6] step 56000/200000 loss=0.1544 pred=0.0328 lr=4.18e-05
+  [reacher d6] step 57000/200000 loss=0.1588 pred=0.0319 lr=4.15e-05
+  [reacher d6] step 58000/200000 loss=0.1457 pred=0.0295 lr=4.12e-05
+  [reacher d6] step 59000/200000 loss=0.1471 pred=0.0299 lr=4.09e-05
+  [reacher d6] step 60000/200000 loss=0.1574 pred=0.0329 lr=4.06e-05
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 60000 rel=0.1277 (2.8x persist) best=0.0494
+  [reacher d6] step 61000/200000 loss=0.1559 pred=0.0300 lr=4.03e-05
+  [reacher d6] step 62000/200000 loss=0.1464 pred=0.0312 lr=4.00e-05
+  [reacher d6] step 63000/200000 loss=0.1524 pred=0.0337 lr=3.96e-05
+  [reacher d6] step 64000/200000 loss=0.1506 pred=0.0305 lr=3.93e-05
+  [reacher d6] step 65000/200000 loss=0.1462 pred=0.0314 lr=3.90e-05
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 65000 rel=0.0436 (9.6x persist) best=0.0436
+  [reacher d6] step 66000/200000 loss=0.1564 pred=0.0294 lr=3.86e-05
+  [reacher d6] step 67000/200000 loss=0.1530 pred=0.0300 lr=3.83e-05
+  [reacher d6] step 68000/200000 loss=0.1495 pred=0.0314 lr=3.80e-05
+  [reacher d6] step 69000/200000 loss=0.1482 pred=0.0296 lr=3.76e-05
+  [reacher d6] step 70000/200000 loss=0.1475 pred=0.0303 lr=3.73e-05
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 70000 rel=0.0929 (4.1x persist) best=0.0436
+  [reacher d6] step 71000/200000 loss=0.1441 pred=0.0269 lr=3.69e-05
+  [reacher d6] step 72000/200000 loss=0.1440 pred=0.0287 lr=3.66e-05
+  [reacher d6] step 73000/200000 loss=0.1461 pred=0.0308 lr=3.62e-05
+  [reacher d6] step 74000/200000 loss=0.1397 pred=0.0274 lr=3.58e-05
+  [reacher d6] step 75000/200000 loss=0.1476 pred=0.0295 lr=3.55e-05
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 75000 rel=0.0494 (8.6x persist) best=0.0436
+  [reacher d6] step 76000/200000 loss=0.1409 pred=0.0291 lr=3.51e-05
+  [reacher d6] step 77000/200000 loss=0.1443 pred=0.0291 lr=3.48e-05
+  [reacher d6] step 78000/200000 loss=0.1553 pred=0.0352 lr=3.44e-05
+  [reacher d6] step 79000/200000 loss=0.1404 pred=0.0271 lr=3.40e-05
+  [reacher d6] step 80000/200000 loss=0.1420 pred=0.0317 lr=3.36e-05
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 80000 rel=0.0459 (9.2x persist) best=0.0436
+  [reacher d6] step 81000/200000 loss=0.1409 pred=0.0306 lr=3.33e-05
+  [reacher d6] step 82000/200000 loss=0.1444 pred=0.0306 lr=3.29e-05
+  [reacher d6] step 83000/200000 loss=0.1380 pred=0.0276 lr=3.25e-05
+  [reacher d6] step 84000/200000 loss=0.1390 pred=0.0321 lr=3.21e-05
+  [reacher d6] step 85000/200000 loss=0.1443 pred=0.0296 lr=3.17e-05
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 85000 rel=0.0336 (13.0x persist) best=0.0336
+  [reacher d6] step 86000/200000 loss=0.1365 pred=0.0291 lr=3.13e-05
+  [reacher d6] step 87000/200000 loss=0.1338 pred=0.0269 lr=3.10e-05
+  [reacher d6] step 88000/200000 loss=0.1422 pred=0.0333 lr=3.06e-05
+  [reacher d6] step 89000/200000 loss=0.1384 pred=0.0300 lr=3.02e-05
+  [reacher d6] step 90000/200000 loss=0.1362 pred=0.0259 lr=2.98e-05
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 90000 rel=0.0344 (12.7x persist) best=0.0336
+  [reacher d6] step 91000/200000 loss=0.1459 pred=0.0307 lr=2.94e-05
+  [reacher d6] step 92000/200000 loss=0.1375 pred=0.0277 lr=2.90e-05
+  [reacher d6] step 93000/200000 loss=0.1346 pred=0.0257 lr=2.86e-05
+  [reacher d6] step 94000/200000 loss=0.1317 pred=0.0262 lr=2.82e-05
+  [reacher d6] step 95000/200000 loss=0.1421 pred=0.0288 lr=2.78e-05
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 95000 rel=0.0361 (12.2x persist) best=0.0336
+  [reacher d6] step 96000/200000 loss=0.1432 pred=0.0265 lr=2.74e-05
+  [reacher d6] step 97000/200000 loss=0.1378 pred=0.0240 lr=2.70e-05
+  [reacher d6] step 98000/200000 loss=0.1400 pred=0.0297 lr=2.66e-05
+  [reacher d6] step 99000/200000 loss=0.1388 pred=0.0290 lr=2.62e-05
+  [reacher d6] step 100000/200000 loss=0.1434 pred=0.0311 lr=2.58e-05
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 100000 rel=0.0285 (15.8x persist) best=0.0285
+  [reacher d6] step 101000/200000 loss=0.1353 pred=0.0240 lr=2.54e-05
+  [reacher d6] step 102000/200000 loss=0.1427 pred=0.0314 lr=2.50e-05
+  [reacher d6] step 103000/200000 loss=0.1521 pred=0.0325 lr=2.46e-05
+  [reacher d6] step 104000/200000 loss=0.1396 pred=0.0248 lr=2.42e-05
+  [reacher d6] step 105000/200000 loss=0.1354 pred=0.0279 lr=2.38e-05
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 105000 rel=0.0270 (17.0x persist) best=0.0270
+  [reacher d6] step 106000/200000 loss=0.1370 pred=0.0296 lr=2.34e-05
+  [reacher d6] step 107000/200000 loss=0.1404 pred=0.0257 lr=2.30e-05
+  [reacher d6] step 108000/200000 loss=0.1304 pred=0.0269 lr=2.26e-05
+  [reacher d6] step 109000/200000 loss=0.1310 pred=0.0241 lr=2.22e-05
+  [reacher d6] step 110000/200000 loss=0.1397 pred=0.0313 lr=2.18e-05
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 110000 rel=0.0257 (18.1x persist) best=0.0257
+  [reacher d6] step 111000/200000 loss=0.1335 pred=0.0324 lr=2.14e-05
+  [reacher d6] step 112000/200000 loss=0.1300 pred=0.0260 lr=2.10e-05
+  [reacher d6] step 113000/200000 loss=0.1373 pred=0.0250 lr=2.06e-05
+  [reacher d6] step 114000/200000 loss=0.1351 pred=0.0277 lr=2.02e-05
+  [reacher d6] step 115000/200000 loss=0.1370 pred=0.0316 lr=1.98e-05
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 115000 rel=0.0279 (16.9x persist) best=0.0257
+  [reacher d6] step 116000/200000 loss=0.1424 pred=0.0301 lr=1.94e-05
+  [reacher d6] step 117000/200000 loss=0.1417 pred=0.0284 lr=1.90e-05
+  [reacher d6] step 118000/200000 loss=0.1389 pred=0.0305 lr=1.87e-05
+  [reacher d6] step 119000/200000 loss=0.1383 pred=0.0265 lr=1.83e-05
+  [reacher d6] step 120000/200000 loss=0.1340 pred=0.0286 lr=1.79e-05
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 120000 rel=0.0273 (17.3x persist) best=0.0257
+  [reacher d6] step 121000/200000 loss=0.1288 pred=0.0262 lr=1.75e-05
+  [reacher d6] step 122000/200000 loss=0.1409 pred=0.0295 lr=1.71e-05
+  [reacher d6] step 123000/200000 loss=0.1382 pred=0.0269 lr=1.67e-05
+  [reacher d6] step 124000/200000 loss=0.1334 pred=0.0265 lr=1.64e-05
+  [reacher d6] step 125000/200000 loss=0.1409 pred=0.0291 lr=1.60e-05
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 125000 rel=0.0257 (18.5x persist) best=0.0257
+  [reacher d6] step 126000/200000 loss=0.1309 pred=0.0239 lr=1.56e-05
+  [reacher d6] step 127000/200000 loss=0.1242 pred=0.0231 lr=1.52e-05
+  [reacher d6] step 128000/200000 loss=0.1340 pred=0.0281 lr=1.49e-05
+  [reacher d6] step 129000/200000 loss=0.1274 pred=0.0234 lr=1.45e-05
+  [reacher d6] step 130000/200000 loss=0.1362 pred=0.0302 lr=1.42e-05
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 130000 rel=0.0247 (19.2x persist) best=0.0247
+  [reacher d6] step 131000/200000 loss=0.1299 pred=0.0264 lr=1.38e-05
+  [reacher d6] step 132000/200000 loss=0.1416 pred=0.0254 lr=1.34e-05
+  [reacher d6] step 133000/200000 loss=0.1308 pred=0.0238 lr=1.31e-05
+  [reacher d6] step 134000/200000 loss=0.1410 pred=0.0243 lr=1.27e-05
+  [reacher d6] step 135000/200000 loss=0.1296 pred=0.0227 lr=1.24e-05
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 135000 rel=0.0238 (20.0x persist) best=0.0238
+  [reacher d6] step 136000/200000 loss=0.1395 pred=0.0272 lr=1.20e-05
+  [reacher d6] step 137000/200000 loss=0.1260 pred=0.0264 lr=1.17e-05
+  [reacher d6] step 138000/200000 loss=0.1455 pred=0.0254 lr=1.14e-05
+  [reacher d6] step 139000/200000 loss=0.1357 pred=0.0273 lr=1.10e-05
+  [reacher d6] step 140000/200000 loss=0.1324 pred=0.0250 lr=1.07e-05
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 140000 rel=0.0249 (19.4x persist) best=0.0238
+  [reacher d6] step 141000/200000 loss=0.1360 pred=0.0310 lr=1.04e-05
+  [reacher d6] step 142000/200000 loss=0.1404 pred=0.0320 lr=1.00e-05
+  [reacher d6] step 143000/200000 loss=0.1313 pred=0.0259 lr=9.73e-06
+  [reacher d6] step 144000/200000 loss=0.1307 pred=0.0233 lr=9.41e-06
+  [reacher d6] step 145000/200000 loss=0.1309 pred=0.0240 lr=9.10e-06
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 145000 rel=0.0240 (20.4x persist) best=0.0238
+  [reacher d6] step 146000/200000 loss=0.1300 pred=0.0260 lr=8.79e-06
+  [reacher d6] step 147000/200000 loss=0.1280 pred=0.0274 lr=8.49e-06
+  [reacher d6] step 148000/200000 loss=0.1267 pred=0.0271 lr=8.19e-06
+  [reacher d6] step 149000/200000 loss=0.1414 pred=0.0276 lr=7.90e-06
+  [reacher d6] step 150000/200000 loss=0.1300 pred=0.0226 lr=7.61e-06
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 150000 rel=0.0229 (21.2x persist) best=0.0229
+  [reacher d6] step 151000/200000 loss=0.1361 pred=0.0223 lr=7.32e-06
+  [reacher d6] step 152000/200000 loss=0.1411 pred=0.0259 lr=7.04e-06
+  [reacher d6] step 153000/200000 loss=0.1385 pred=0.0281 lr=6.76e-06
+  [reacher d6] step 154000/200000 loss=0.1394 pred=0.0246 lr=6.49e-06
+  [reacher d6] step 155000/200000 loss=0.1326 pred=0.0266 lr=6.23e-06
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 155000 rel=0.0232 (21.0x persist) best=0.0229
+  [reacher d6] step 156000/200000 loss=0.1280 pred=0.0245 lr=5.96e-06
+  [reacher d6] step 157000/200000 loss=0.1269 pred=0.0234 lr=5.71e-06
+  [reacher d6] step 158000/200000 loss=0.1291 pred=0.0255 lr=5.45e-06
+  [reacher d6] step 159000/200000 loss=0.1313 pred=0.0243 lr=5.21e-06
+  [reacher d6] step 160000/200000 loss=0.1236 pred=0.0215 lr=4.96e-06
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 160000 rel=0.0229 (21.5x persist) best=0.0229
+  [reacher d6] step 161000/200000 loss=0.1349 pred=0.0265 lr=4.73e-06
+  [reacher d6] step 162000/200000 loss=0.1339 pred=0.0255 lr=4.50e-06
+  [reacher d6] step 163000/200000 loss=0.1360 pred=0.0290 lr=4.27e-06
+  [reacher d6] step 164000/200000 loss=0.1367 pred=0.0244 lr=4.05e-06
+  [reacher d6] step 165000/200000 loss=0.1289 pred=0.0263 lr=3.83e-06
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 165000 rel=0.0224 (21.9x persist) best=0.0224
+  [reacher d6] step 166000/200000 loss=0.1230 pred=0.0258 lr=3.62e-06
+  [reacher d6] step 167000/200000 loss=0.1281 pred=0.0227 lr=3.42e-06
+  [reacher d6] step 168000/200000 loss=0.1360 pred=0.0305 lr=3.22e-06
+  [reacher d6] step 169000/200000 loss=0.1275 pred=0.0235 lr=3.02e-06
+  [reacher d6] step 170000/200000 loss=0.1338 pred=0.0288 lr=2.84e-06
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 170000 rel=0.0225 (21.8x persist) best=0.0224
+  [reacher d6] step 171000/200000 loss=0.1352 pred=0.0312 lr=2.65e-06
+  [reacher d6] step 172000/200000 loss=0.1286 pred=0.0250 lr=2.48e-06
+  [reacher d6] step 173000/200000 loss=0.1343 pred=0.0289 lr=2.30e-06
+  [reacher d6] step 174000/200000 loss=0.1336 pred=0.0247 lr=2.14e-06
+  [reacher d6] step 175000/200000 loss=0.1271 pred=0.0231 lr=1.98e-06
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 175000 rel=0.0222 (22.2x persist) best=0.0222
+  [reacher d6] step 176000/200000 loss=0.1265 pred=0.0279 lr=1.83e-06
+  [reacher d6] step 177000/200000 loss=0.1291 pred=0.0265 lr=1.68e-06
+  [reacher d6] step 178000/200000 loss=0.1311 pred=0.0237 lr=1.54e-06
+  [reacher d6] step 179000/200000 loss=0.1265 pred=0.0240 lr=1.40e-06
+  [reacher d6] step 180000/200000 loss=0.1337 pred=0.0267 lr=1.27e-06
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 180000 rel=0.0222 (22.3x persist) best=0.0222
+  [reacher d6] step 181000/200000 loss=0.1385 pred=0.0272 lr=1.15e-06
+  [reacher d6] step 182000/200000 loss=0.1312 pred=0.0242 lr=1.03e-06
+  [reacher d6] step 183000/200000 loss=0.1266 pred=0.0226 lr=9.22e-07
+  [reacher d6] step 184000/200000 loss=0.1371 pred=0.0233 lr=8.18e-07
+  [reacher d6] step 185000/200000 loss=0.1280 pred=0.0245 lr=7.19e-07
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 185000 rel=0.0221 (22.4x persist) best=0.0221
+  [reacher d6] step 186000/200000 loss=0.1312 pred=0.0257 lr=6.27e-07
+  [reacher d6] step 187000/200000 loss=0.1340 pred=0.0265 lr=5.41e-07
+  [reacher d6] step 188000/200000 loss=0.1333 pred=0.0230 lr=4.61e-07
+  [reacher d6] step 189000/200000 loss=0.1273 pred=0.0238 lr=3.88e-07
+  [reacher d6] step 190000/200000 loss=0.1296 pred=0.0221 lr=3.20e-07
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 190000 rel=0.0220 (22.5x persist) best=0.0220
+  [reacher d6] step 191000/200000 loss=0.1211 pred=0.0190 lr=2.60e-07
+  [reacher d6] step 192000/200000 loss=0.1283 pred=0.0247 lr=2.05e-07
+  [reacher d6] step 193000/200000 loss=0.1302 pred=0.0218 lr=1.57e-07
+  [reacher d6] step 194000/200000 loss=0.1314 pred=0.0274 lr=1.16e-07
+  [reacher d6] step 195000/200000 loss=0.1358 pred=0.0274 lr=8.02e-08
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+  [eval reacher d6] step 195000 rel=0.0221 (22.5x persist) best=0.0220
+[converged reacher d6] rel 0.0221 flat over 5 evals (above target)
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/home/vg2097/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py:66: RuntimeWarning: lancedb fork support is experimental: the internal async runtime has been reset in the forked child, but a small chance of deadlock remains if other state was mid-operation at fork time. The 'forkserver' or 'spawn' multiprocessing start method is likely a safer alternative.
+  self.pid = os.fork()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+
+[done reacher d=6] step 195000 | final rel-MSE=0.0215 (22.8x persist) | best=0.0215 | 16.0 h

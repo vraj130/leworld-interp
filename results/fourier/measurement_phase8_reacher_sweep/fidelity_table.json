@@ -1,0 +1,46 @@
+{
+  "env": "reacher",
+  "n_val_clips": 384,
+  "rows": [
+    {
+      "label": "released-reacher-ref",
+      "depth": 6,
+      "params_total_M": 18.034,
+      "params_predictor_M": 10.791,
+      "params_per_block_M": 1.799,
+      "tf_next_emb_mse": 0.0065653957426548,
+      "relative_mse": 0.006613303239495476,
+      "skill_vs_persistence": 74.56147436570329,
+      "shuf_over_true": 86.15952113514145,
+      "passed": true
+    },
+    {
+      "label": "reacher-d3",
+      "depth": 3,
+      "params_total_M": 12.639,
+      "params_predictor_M": 5.396,
+      "params_per_block_M": 1.799,
+      "tf_next_emb_mse": 0.0012073820689693093,
+      "relative_mse": 0.0012142760019952686,
+      "skill_vs_persistence": 388.6793969492639,
+      "shuf_over_true": 612.1467710267149,
+      "passed": true,
+      "step": 185000,
+      "train_wall_h": 15.11
+    },
+    {
+      "label": "reacher-d6",
+      "depth": 6,
+      "params_total_M": 18.034,
+      "params_predictor_M": 10.791,
+      "params_per_block_M": 1.799,
+      "tf_next_emb_mse": 0.001017819275148213,
+      "relative_mse": 0.0010293615725396543,
+      "skill_vs_persistence": 481.5559728290092,
+      "shuf_over_true": 655.4968559621185,
+      "passed": true,
+      "step": 195000,
+      "train_wall_h": 16.04
+    }
+  ]
+}

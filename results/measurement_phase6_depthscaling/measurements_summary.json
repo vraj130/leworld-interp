@@ -35,6 +35,50 @@
       "D_l_late_over_early_slope": 1.1
     },
     {
+      "depth": 6,
+      "n_clips": 1000,
+      "params_total_M": 18.034,
+      "params_predictor_M": 10.791,
+      "commitment_depth_abs": 2,
+      "commitment_depth_frac": 0.333,
+      "cumulative_curve": [
+        0.14532,
+        0.12178,
+        0.09186,
+        0.06458,
+        0.03671,
+        0.01211
+      ],
+      "last_block_frac_of_full": 0.083,
+      "mlp_share": 0.857,
+      "mlp_share_per_block": [
+        0.679,
+        0.793,
+        0.853,
+        0.944,
+        0.917,
+        0.956
+      ],
+      "D_l_final_swap": [
+        0.0665,
+        0.1194,
+        0.1724,
+        0.2212,
+        0.2742,
+        0.3365
+      ],
+      "D_l_normalized": [
+        0.198,
+        0.355,
+        0.512,
+        0.657,
+        0.815,
+        1.0
+      ],
+      "D_l_linear_r2": 0.999,
+      "D_l_late_over_early_slope": 1.089
+    },
+    {
       "depth": 12,
       "n_clips": 1000,
       "params_total_M": 28.825,
@@ -256,5 +300,14 @@
       "final_6k_frac_of_descent": 0.0022,
       "status": "plateaued"
     }
-  ]
+  ],
+  "retrained_d6_gate": {
+    "retrained_d6_commitment_depth": 2,
+    "released_target_commitment_depth": 2,
+    "commitment_within_pm1": true,
+    "retrained_d6_mlp_share": 0.857,
+    "released_target_mlp_share": 0.75,
+    "mlp_share_above_0p7": true,
+    "GATE": "PASS"
+  }
 }

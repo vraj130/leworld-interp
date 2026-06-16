@@ -1,0 +1,30 @@
+[watcher] started 2026-06-16T01:18:51-04:00; waiting for d3+d6 to finish
+[watcher] both runs exited 2026-06-16T17:15:08-04:00; running gate
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+[phase8 fidelity:reacher] 1500 held-out val clips
+17:15:39 | INFO  | __init__.py | JAX version 0.10.1 available.
+17:15:42 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+17:15:42 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+  released ref (d6): 18.03M rel=0.0068 (78.9x persist) rollout shuf/true=90.0x -> PASS
+17:15:49 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+  depth  3: 12.64M (pred 5.40M, /blk 1.80M) rel=0.0012 (424.6x persist) rollout shuf/true=554.2x -> PASS
+17:15:55 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+  depth  6: 18.03M (pred 10.79M, /blk 1.80M) rel=0.0010 (529.6x persist) rollout shuf/true=668.5x -> PASS
+
+saved /mnt/NAS/home/vg2097/leworld-interp/results/fourier/measurement_phase8_reacher_sweep/fidelity_table.json
+[watcher] --- gate at shannon's n=384 ---
+/mnt/NAS/home/vg2097/leworld-interp/src/leworld_interp/pixelcache.py:180: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  action = torch.from_numpy(np.ascontiguousarray(a)).reshape(self.num_steps, -1).float()
+[phase8 fidelity:reacher] 384 held-out val clips
+17:16:18 | INFO  | __init__.py | JAX version 0.10.1 available.
+17:16:19 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+17:16:19 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+  released ref (d6): 18.03M rel=0.0066 (74.6x persist) rollout shuf/true=86.2x -> PASS
+17:16:21 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+  depth  3: 12.64M (pred 5.40M, /blk 1.80M) rel=0.0012 (388.7x persist) rollout shuf/true=612.1x -> PASS
+17:16:23 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+  depth  6: 18.03M (pred 10.79M, /blk 1.80M) rel=0.0010 (481.6x persist) rollout shuf/true=655.5x -> PASS
+
+saved /mnt/NAS/home/vg2097/leworld-interp/results/fourier/measurement_phase8_reacher_sweep/fidelity_table.json
+[watcher] DONE 2026-06-16T17:16:26-04:00

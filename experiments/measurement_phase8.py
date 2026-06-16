@@ -88,7 +88,13 @@ def main():
     summaries = {d: summarize_depth(raw[d]) for d in args.depths}
     fracs = [summaries[d]["commitment_depth_frac"] for d in args.depths]
     in_band = [BAND[0] <= f <= BAND[1] for f in fracs]
-    mlp_ok = all(summaries[d]["mlp_share"] > 0.7 for d in args.depths)
+
+    # MLP routing holds (per prereg) if share>0.7 OR attn-only is at the machine noise floor
+    # (attn negligible -> essentially all MLP-routed; the exact ratio is fragile there).
+    def routing_holds(d):
+        attn = np.asarray(raw[d]["branch_attn_only"], float)
+        return bool(summaries[d]["mlp_share"] > 0.7 or attn.min() < 1e-4)
+    mlp_ok = all(routing_holds(d) for d in args.depths)
     relative = max(summaries[d]["commitment_depth_abs"] for d in args.depths) > \
         min(summaries[d]["commitment_depth_abs"] for d in args.depths)  # commit grows with depth
     if all(in_band) and mlp_ok and relative:

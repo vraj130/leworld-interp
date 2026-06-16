@@ -1,0 +1,345 @@
+{
+  "env": "reacher",
+  "n_clips": 1000,
+  "band": [
+    0.28,
+    0.4
+  ],
+  "verdict": "GENERALIZES",
+  "summaries": [
+    {
+      "depth": 3,
+      "n_clips": 1000,
+      "params_total_M": 12.639,
+      "params_predictor_M": 5.396,
+      "commitment_depth_abs": 1,
+      "commitment_depth_frac": 0.333,
+      "cumulative_curve": [
+        0.50423,
+        0.2656,
+        0.07296
+      ],
+      "last_block_frac_of_full": 0.145,
+      "mlp_share": 0.742,
+      "mlp_share_per_block": [
+        0.858,
+        0.851,
+        0.518
+      ],
+      "D_l_final_swap": [
+        0.2345,
+        0.3771,
+        0.4726
+      ],
+      "D_l_normalized": [
+        0.496,
+        0.798,
+        1.0
+      ],
+      "D_l_linear_r2": 0.987,
+      "D_l_late_over_early_slope": 0.67
+    },
+    {
+      "depth": 6,
+      "n_clips": 1000,
+      "params_total_M": 18.034,
+      "params_predictor_M": 10.791,
+      "commitment_depth_abs": 2,
+      "commitment_depth_frac": 0.333,
+      "cumulative_curve": [
+        0.5332,
+        0.42183,
+        0.29811,
+        0.17743,
+        0.06875,
+        0.00953
+      ],
+      "last_block_frac_of_full": 0.018,
+      "mlp_share": 0.744,
+      "mlp_share_per_block": [
+        0.815,
+        0.852,
+        0.884,
+        0.724,
+        0.667,
+        0.521
+      ],
+      "D_l_final_swap": [
+        0.1406,
+        0.2562,
+        0.3512,
+        0.4331,
+        0.5041,
+        0.5455
+      ],
+      "D_l_normalized": [
+        0.258,
+        0.47,
+        0.644,
+        0.794,
+        0.924,
+        1.0
+      ],
+      "D_l_linear_r2": 0.978,
+      "D_l_late_over_early_slope": 0.533
+    },
+    {
+      "depth": 12,
+      "n_clips": 1000,
+      "params_total_M": 28.825,
+      "params_predictor_M": 21.582,
+      "commitment_depth_abs": 4,
+      "commitment_depth_frac": 0.333,
+      "cumulative_curve": [
+        0.55667,
+        0.5143,
+        0.46329,
+        0.39677,
+        0.32609,
+        0.25724,
+        0.17732,
+        0.11724,
+        0.06704,
+        0.03016,
+        0.00854,
+        0.00084
+      ],
+      "last_block_frac_of_full": 0.002,
+      "mlp_share": 0.665,
+      "mlp_share_per_block": [
+        0.878,
+        0.848,
+        0.747,
+        0.908,
+        0.875,
+        0.287,
+        0.476,
+        0.653,
+        0.808,
+        0.654,
+        0.736,
+        0.105
+      ],
+      "D_l_final_swap": [
+        0.0732,
+        0.1249,
+        0.1789,
+        0.2343,
+        0.2904,
+        0.3334,
+        0.3778,
+        0.4292,
+        0.4775,
+        0.5206,
+        0.564,
+        0.587
+      ],
+      "D_l_normalized": [
+        0.125,
+        0.213,
+        0.305,
+        0.399,
+        0.495,
+        0.568,
+        0.644,
+        0.731,
+        0.813,
+        0.887,
+        0.961,
+        1.0
+      ],
+      "D_l_linear_r2": 0.996,
+      "D_l_late_over_early_slope": 0.727
+    },
+    {
+      "depth": 18,
+      "n_clips": 1000,
+      "params_total_M": 39.615,
+      "params_predictor_M": 32.372,
+      "commitment_depth_abs": 7,
+      "commitment_depth_frac": 0.389,
+      "cumulative_curve": [
+        0.55111,
+        0.52965,
+        0.49642,
+        0.4641,
+        0.42841,
+        0.38018,
+        0.34044,
+        0.28055,
+        0.22716,
+        0.17955,
+        0.1374,
+        0.10134,
+        0.06948,
+        0.04181,
+        0.02188,
+        0.00878,
+        0.00232,
+        0.00027
+      ],
+      "last_block_frac_of_full": 0.0,
+      "mlp_share": 0.665,
+      "mlp_share_per_block": [
+        0.38,
+        0.912,
+        0.928,
+        0.943,
+        0.534,
+        0.918,
+        0.324,
+        0.348,
+        0.585,
+        0.37,
+        0.758,
+        0.669,
+        0.954,
+        0.921,
+        0.899,
+        0.811,
+        0.545,
+        0.18
+      ],
+      "D_l_final_swap": [
+        0.0448,
+        0.0844,
+        0.1234,
+        0.1607,
+        0.1921,
+        0.2323,
+        0.2644,
+        0.2971,
+        0.3335,
+        0.3658,
+        0.4015,
+        0.4348,
+        0.4727,
+        0.5099,
+        0.5455,
+        0.577,
+        0.598,
+        0.6125
+      ],
+      "D_l_normalized": [
+        0.073,
+        0.138,
+        0.201,
+        0.262,
+        0.314,
+        0.379,
+        0.432,
+        0.485,
+        0.544,
+        0.597,
+        0.655,
+        0.71,
+        0.772,
+        0.832,
+        0.89,
+        0.942,
+        0.976,
+        1.0
+      ],
+      "D_l_linear_r2": 0.998,
+      "D_l_late_over_early_slope": 0.809
+    }
+  ],
+  "pusht_reduced": {
+    "3": [
+      1,
+      0.33
+    ],
+    "6": [
+      2,
+      0.33
+    ],
+    "12": [
+      5,
+      0.42
+    ],
+    "18": [
+      7,
+      0.39
+    ]
+  },
+  "pusht_released": {
+    "6": [
+      2,
+      0.33
+    ],
+    "12": [
+      4,
+      0.33
+    ]
+  },
+  "p5_reacher_d6_ref": {
+    "commit": 2,
+    "frac": 0.33,
+    "mlp_share": 0.75
+  },
+  "robustness": [
+    {
+      "depth": 6,
+      "seed": 0,
+      "commit": 2,
+      "frac": 0.333,
+      "mlp_share": 0.744
+    },
+    {
+      "depth": 6,
+      "seed": 1,
+      "commit": 2,
+      "frac": 0.333,
+      "mlp_share": 0.749
+    },
+    {
+      "depth": 6,
+      "seed": 2,
+      "commit": 2,
+      "frac": 0.333,
+      "mlp_share": 0.753
+    },
+    {
+      "depth": 12,
+      "seed": 0,
+      "commit": 4,
+      "frac": 0.333,
+      "mlp_share": 0.665
+    },
+    {
+      "depth": 12,
+      "seed": 1,
+      "commit": 4,
+      "frac": 0.333,
+      "mlp_share": 0.669
+    },
+    {
+      "depth": 12,
+      "seed": 2,
+      "commit": 4,
+      "frac": 0.333,
+      "mlp_share": 0.662
+    },
+    {
+      "depth": 18,
+      "seed": 0,
+      "commit": 7,
+      "frac": 0.389,
+      "mlp_share": 0.665
+    },
+    {
+      "depth": 18,
+      "seed": 1,
+      "commit": 7,
+      "frac": 0.389,
+      "mlp_share": 0.666
+    },
+    {
+      "depth": 18,
+      "seed": 2,
+      "commit": 7,
+      "frac": 0.389,
+      "mlp_share": 0.664
+    }
+  ]
+}

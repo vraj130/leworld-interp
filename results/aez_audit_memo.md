@@ -2,10 +2,11 @@
 
 Status: Measurements A through E, the E
 retrained-probe robustness check, the Phase 5 reacher replication, the Phase 6 depth-scaling
-study, and the Phase 7 released-scale depth-12 verification are complete and reproducible. Scope:
-the released LeWM checkpoints for PushT and reacher, four from-scratch reduced-regime retrains at
-predictor depth {3, 6, 12, 18}, and one released-scale depth-12 retrain. Every probe number states
-its sample size, since the retrained-probe check showed probe results are sample-size sensitive.
+study, the Phase 7 released-scale depth-12 verification, and the Phase 8 reacher depth sweep are
+complete and reproducible. Scope: the released LeWM checkpoints for PushT and reacher, a PushT
+reduced-regime depth sweep {3, 6, 12, 18}, a released-scale PushT depth-12 retrain, and a
+released-scale reacher depth sweep {3, 6, 12, 18}. Every probe number states its sample size, since
+the retrained-probe check showed probe results are sample-size sensitive.
 
 ## Verdict in one paragraph
 
@@ -21,17 +22,31 @@ depth-scaling study refines what "early" means: the commitment location is relat
 It sits at a roughly constant fraction, about the first third, of predictor depth, so the block-2-of-6
 result is the depth-6 instance of a fraction that scales with depth rather than a fixed early block.
 This relative-depth law is verified at released scale at two points (depth 6 and depth 12 both commit
-at fraction 0.33), so it is not an artifact of the reduced-data retraining regime.
+at fraction 0.33), so it is not an artifact of the reduced-data retraining regime, and it is
+environment-general: a full released-scale depth sweep on reacher reproduces the same fractions
+(0.33, 0.33, 0.33, 0.39 at depths 3, 6, 12, 18), identical to PushT at every depth. So the commitment
+fraction holds at about 0.33 across both the depth axis and both environments tested.
 
-## Cross-environment status: REPLICATED
+## Cross-environment status: REPLICATED, including the depth law
 
-The three least-ambiguous signals were re-run on reacher (3D continuous control, action_dim 2),
-fidelity-gated first (teacher-forced relative MSE 0.7 percent and 80x a persistence baseline,
-rollout cost 91x worse under shuffled actions, on N equals 1000 val clips). All three replicate:
-the D_l propagation curve is monotonic and roughly linear, the cumulative-ablation commitment
-depth is 2 (identical to PushT), block 5 is again near-idle, and the MLP share of the per-branch
-ablation effect is 0.75, above the 0.7 bar. The early-graded-MLP-routed-commitment picture is
-not PushT specific.
+At depth 6 the three least-ambiguous signals were re-run on reacher (3D continuous control,
+action_dim 2), fidelity-gated first (teacher-forced relative MSE 0.7 percent and 80x a persistence
+baseline, rollout cost 91x worse under shuffled actions, on N equals 1000 val clips). All three
+replicate: the D_l propagation curve is monotonic and roughly linear, the cumulative-ablation
+commitment depth is 2 (identical to PushT), block 5 is again near-idle, and the MLP share of the
+per-branch ablation effect is 0.75, above the 0.7 bar.
+
+The full depth sweep was then run on reacher as well (Phase 8): LeWM retrained from scratch on
+reacher at predictor depth {3, 6, 12, 18} at released-data scale (lossless RAM-resident zstd cache,
+all four readout-fidelity PASS, d3 and d6 trained on fourier and d12 and d18 on shannon from the same
+shared cache, then re-measured uniformly). The reacher commitment fractions are 0.33, 0.33, 0.33,
+0.39 for depths 3, 6, 12, 18, identical to PushT at every depth, with the absolute block growing
+1, 2, 4, 7 exactly as on PushT, seed-stable, and with the trained reacher d6 reproducing the official
+released reacher d6 (both fraction 0.33). MLP routing holds at every depth (share 0.74 at d3/d6,
+attention at the noise floor at d12/d18), and the D_l deep-third plateau is present throughout. So the
+relative-depth, MLP-routed commitment law is not PushT specific: the commitment fraction holds at
+about 0.33 across both the depth axis and two environments. Detail in
+results/measurement_phase8_reacher_sweep/measurements_results.md.
 
 ## Depth-scaling (Phase 6): commitment depth is RELATIVE
 
@@ -146,21 +161,23 @@ in partial form after the retrained-probe correction.
 
 ## Limitations to name first
 
-Depth-scaling is now tested, including at released scale. The earlier worry, that the six-block
-predictor was shallow and the commitment might sharpen or move in a deeper predictor, is resolved by
-Phase 6: the commitment does move, staying at a roughly constant fraction (about 0.33 to 0.42) of
-depth across {3, 6, 12, 18}. Phase 7 then closed the data-scale gap by training a depth-12 model at
-released-data quality (rel-MSE 0.0085, fidelity PASS): its commitment fraction is 0.33, identical to
-the released depth-6, so the law is now directly verified at two released-scale points spanning the
-absolute-versus-relative divergence, not only in the reduced regime. The remaining caveat is small:
-the intermediate depths d3 and d18 are verified in the reduced regime, and the released-scale d12 was
-trained by our own pipeline (the Phase 6 retrained-depth-6 consistency gate establishes that pipeline
-reproduces the official released-depth-6 audit), rather than every depth existing as an official
-released checkpoint.
+Depth-scaling is now tested, including at released scale and across both environments. The earlier
+worry, that the six-block predictor was shallow and the commitment might sharpen or move in a deeper
+predictor, is resolved by Phase 6: the commitment does move, staying at a roughly constant fraction
+of depth across {3, 6, 12, 18}. Phase 7 closed the data-scale gap on PushT (a released-scale depth-12
+model commits at fraction 0.33, matching the released depth-6). Phase 8 closed the environment gap: a
+full released-scale depth sweep on reacher gives fractions 0.33, 0.33, 0.33, 0.39, identical to PushT
+at every depth. So the depth law is now confirmed at released scale on both environments, not just in
+the reduced regime and not just on PushT. The remaining caveat is small: the reacher depth sweep and
+the PushT intermediate depths were trained by our own pipeline rather than existing as official
+released checkpoints, but the retrained-depth-6 consistency checks on both environments establish
+that the pipeline reproduces the official released depth-6 audit (PushT and reacher both fraction
+0.33).
 
-Single architecture. The result is replicated across two environments, PushT and reacher, but
-within one model family, LeWM. It is not tested across architectures, so the relative-depth,
-MLP-routed pattern may be specific to this AdaLN-zero JEPA predictor.
+Single architecture. The result is replicated across two environments, PushT and reacher, and across
+the depth axis in both, but within one model family, LeWM. It is not tested across architectures, so
+the relative-depth, MLP-routed pattern may be specific to this AdaLN-zero JEPA predictor. This is now
+the one untested axis.
 
 ## Recommendation
 
@@ -170,12 +187,14 @@ depth, predominantly MLP-routed, with a distributed consequence representation t
 refine. Do not change substrate. The V-JEPA 2-AC scoping check is reserved for a confirmed flat or
 distributed result, which this audit did not produce on any of the models tested.
 
-The depth-scaling axis that was the original main threat is now closed: commitment is relative, not
-a fixed early block, and MLP routing holds at every depth. For a practitioner building JEPA-style
-world models the actionable read is that the action-conditioning work is done by a fixed front
-fraction of the predictor and the deep tail is largely idle, so predictor depth past that fraction
-buys little for action conditioning specifically. The remaining open axis is cross-architecture
-generality, not depth.
+The depth-scaling axis that was the original main threat is now closed on both environments:
+commitment is relative, not a fixed early block, it sits at about the same fraction (0.33) on PushT
+and reacher, and MLP routing holds at every depth. For a practitioner building JEPA-style world
+models the actionable read is that the action-conditioning work is done by a fixed front fraction
+(about the first third) of the predictor and the deep tail is largely idle, so predictor depth past
+that fraction buys little for action conditioning specifically, and this holds across both
+environments tested. The one remaining open axis is cross-architecture generality, not depth and not
+environment.
 
 ## Key figures
 
@@ -188,6 +207,7 @@ generality, not depth.
 - results/measurement_phase6_depthscaling/phase6_gate_d6.png, retrained-d6 versus released-d6 gate (N 1000).
 - results/measurement_phase6_depthscaling/phase6_sweep.png, commitment depth, MLP routing, and D_l shape across depth {3, 6, 12, 18} (N 1000).
 - results/measurement_phase7_released_d12/phase7_released_d12.png, released-scale d12 commitment fraction vs released d6 and reduced d12 (N 1000).
+- results/measurement_phase8_reacher_sweep/phase8_reacher_sweep.png, reacher depth sweep commitment fraction matching PushT across {3, 6, 12, 18} (N 1000).
 
 Every figure has a saved raw-array counterpart under DATA_ROOT and is regenerable with the
 matching experiment module and the --from-cache flag.

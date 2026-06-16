@@ -187,11 +187,65 @@ def phase7_plot():
     print(f"saved {out}")
 
 
+def phase8_plot():
+    """Reacher depth sweep vs PushT: the commitment fraction holds across depth AND environment."""
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    arr8 = paths.ACTIVATIONS / "measurement_phase8_reacher_sweep"
+    res8 = paths.RESULTS / "measurement_phase8_reacher_sweep"
+    depths = [3, 6, 12, 18]
+    rs = {d: json.load(open(arr8 / f"depth_{d}.json")) for d in depths}
+    colors = {3: "#2ca02c", 6: "#1f77b4", 12: "#ff7f0e", 18: "#d62728"}
+
+    fig, ax = plt.subplots(1, 2, figsize=(13, 4.8))
+
+    # panel 1: reacher cumulative-ablation curves on fractional-depth axis
+    for d in depths:
+        cum = np.asarray(rs[d]["cumulative_mse_increase"], float); cum = cum / cum[0]
+        nb = rs[d]["nb"]; x = np.arange(nb) / (nb - 1)
+        commit = max([l for l in range(nb) if cum[l] >= 0.5])
+        ax[0].plot(x, cum, "-o", color=colors[d], lw=2.0, ms=4,
+                   label=f"reacher d{d} (commit {commit}, frac {commit/nb:.2f})")
+    ax[0].axhline(0.5, color="#888", ls=":", lw=1.3)
+    ax[0].set_xlabel("fractional depth  l/(D-1)"); ax[0].set_ylabel("cumulative damage / full")
+    ax[0].set_title("(2) reacher commitment depth across the sweep"); ax[0].legend(fontsize=8)
+
+    # panel 2: fraction vs total depth, reacher and PushT overlaid
+    reacher_frac = {}
+    for d in depths:
+        cum = np.asarray(rs[d]["cumulative_mse_increase"], float); cum = cum / cum[0]
+        nb = rs[d]["nb"]
+        reacher_frac[d] = max([l for l in range(nb) if cum[l] >= 0.5]) / nb
+    pusht_reduced = {3: 1 / 3, 6: 2 / 6, 12: 5 / 12, 18: 7 / 18}
+    pusht_released = {6: 2 / 6, 12: 4 / 12}
+    ax[1].plot(list(reacher_frac), list(reacher_frac.values()), "-o", color="#d62728", lw=2.4, ms=11,
+               label="reacher (released)")
+    ax[1].plot(list(pusht_reduced), list(pusht_reduced.values()), "--s", color="#7f7f7f", lw=1.8, ms=7,
+               label="PushT (reduced sweep)")
+    ax[1].plot(list(pusht_released), list(pusht_released.values()), "D", color="#1f77b4", ms=11,
+               label="PushT (released)")
+    ax[1].axhline(1 / 3, color="#2ca02c", ls=":", lw=1.5, label="fraction 1/3")
+    ax[1].set_ylim(0, 0.7)
+    ax[1].set_xlabel("total predictor depth"); ax[1].set_ylabel("commitment fraction of depth")
+    ax[1].set_title("(2) fraction holds at ~0.33 across depth AND environment"); ax[1].legend(fontsize=8)
+
+    fig.suptitle("Phase 8: the commitment fraction generalizes across both depth and environment "
+                 "(reacher matches PushT at every depth)", fontsize=11)
+    fig.tight_layout()
+    paths.ensure(res8)
+    out = res8 / "phase8_reacher_sweep.png"
+    fig.savefig(out, dpi=130); plt.close(fig)
+    print(f"saved {out}")
+
+
 def main():
     pa = argparse.ArgumentParser()
     pa.add_argument("--gate", action="store_true")
     pa.add_argument("--sweep", action="store_true")
     pa.add_argument("--phase7", action="store_true")
+    pa.add_argument("--phase8", action="store_true")
     pa.add_argument("--depths", type=int, nargs="+", default=[3, 6, 12, 18])
     args = pa.parse_args()
     paths.ensure(RES_DIR)
@@ -201,6 +255,8 @@ def main():
         sweep_plot(args.depths)
     if args.phase7:
         phase7_plot()
+    if args.phase8:
+        phase8_plot()
 
 
 if __name__ == "__main__":

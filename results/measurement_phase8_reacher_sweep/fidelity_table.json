@@ -1,6 +1,6 @@
 {
   "env": "reacher",
-  "n_val_clips": 384,
+  "n_val_clips": 1500,
   "rows": [
     {
       "label": "released-reacher-ref",
@@ -8,11 +8,67 @@
       "params_total_M": 18.034,
       "params_predictor_M": 10.791,
       "params_per_block_M": 1.799,
-      "tf_next_emb_mse": 0.006551729515194893,
-      "relative_mse": 0.006599337198163926,
-      "skill_vs_persistence": 74.72265598235987,
-      "shuf_over_true": 86.33030603026086,
+      "tf_next_emb_mse": 0.006665715482085943,
+      "relative_mse": 0.006755336385942115,
+      "skill_vs_persistence": 78.90393883411349,
+      "shuf_over_true": 89.97274205947289,
       "passed": true
+    },
+    {
+      "label": "reacher-d3",
+      "depth": 3,
+      "params_total_M": 12.639,
+      "params_predictor_M": 5.396,
+      "params_per_block_M": 1.799,
+      "tf_next_emb_mse": 0.0011918144300580025,
+      "relative_mse": 0.001204676884693438,
+      "skill_vs_persistence": 424.57537815474086,
+      "shuf_over_true": 554.1574868455864,
+      "passed": true,
+      "step": 185000,
+      "train_wall_h": 15.11
+    },
+    {
+      "label": "reacher-d6",
+      "depth": 6,
+      "params_total_M": 18.034,
+      "params_predictor_M": 10.791,
+      "params_per_block_M": 1.799,
+      "tf_next_emb_mse": 0.0009982895571738482,
+      "relative_mse": 0.0010130319193897659,
+      "skill_vs_persistence": 529.562149266458,
+      "shuf_over_true": 668.4589226238738,
+      "passed": true,
+      "step": 195000,
+      "train_wall_h": 16.04
+    },
+    {
+      "label": "reacher-d12",
+      "depth": 12,
+      "params_total_M": 28.825,
+      "params_predictor_M": 21.582,
+      "params_per_block_M": 1.798,
+      "tf_next_emb_mse": 0.0009491568780504167,
+      "relative_mse": 0.000962426804244673,
+      "skill_vs_persistence": 579.5037256251245,
+      "shuf_over_true": 770.092189076726,
+      "passed": true,
+      "step": 185000,
+      "train_wall_h": 14.89
+    },
+    {
+      "label": "reacher-d18",
+      "depth": 18,
+      "params_total_M": 39.615,
+      "params_predictor_M": 32.372,
+      "params_per_block_M": 1.798,
+      "tf_next_emb_mse": 0.0007689247140660882,
+      "relative_mse": 0.0007781907091866613,
+      "skill_vs_persistence": 708.6989279203539,
+      "shuf_over_true": 884.1498743417451,
+      "passed": true,
+      "step": 190000,
+      "train_wall_h": 16.61
     }
   ]
 }
